@@ -43,7 +43,7 @@
   }
 
   // Listen to multiple events so the difference is easy to see
-  ["keydown", "keypress", "keyup", "beforeinput", "input", "change", "paste"].forEach((type) => {
+  ["keydown", "keyup", "beforeinput", "input", "change", "paste"].forEach((type) => {
     inp.addEventListener(type, (e) => {
       const extra =
         (e.inputType ? `inputType=${e.inputType}` : "") +
